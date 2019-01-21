@@ -1,0 +1,62 @@
+body {
+    font-family: $text-default;
+    -webkit-font-smoothing: antialiased;
+}
+
+.wh,
+.bl,
+.gr {
+
+    font-family: 'caviar-bold';
+    -webkit-font-smoothing: antialiased;
+
+
+}
+
+
+h3 {
+    font-family: $title-default;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 20px 0;
+}
+
+h2 {
+    font-family: 'caviar-bold';
+    text-align: center;
+    color: $dark-gray;
+    margin-top: 50px;
+    padding-top: 50px;
+    border-top: 1px solid $dark-gray;
+    width: 100%;
+
+    @media (min-width: $bp-medium) {
+        display: flex;
+
+        margin-right: auto;
+        border-top: none;
+        border-bottom: 1px solid $dark-gray;
+        width: 100%;
+        padding: 20px;
+
+    }
+
+}
+
+.sidr {
+
+    font-family: 'caviar', serif;
+
+}
+
+.search-form input::placeholder {
+
+    font-family: $text-default;
+}
+
+h5 {
+    display: inline-block;
+    background-color: white;
+    padding: 4px 4px;
+    margin: 10px 10px;
+}

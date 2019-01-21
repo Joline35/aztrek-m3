@@ -1,0 +1,175 @@
+.header-top {
+
+    background: url(../media/bg-header.jpg) center bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.slogan {
+
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 40px;
+
+
+    @media (min-width: $bp-medium) {
+
+        margin-top: 0;
+        font-size: 2rem;
+        letter-spacing: 2pt;
+
+
+    }
+
+    @media (min-width: $bp-large) {
+
+        margin-top: 0;
+        font-size: 2.2rem;
+        letter-spacing: 2pt;
+
+
+    }
+}
+
+
+.accroche {
+
+
+    color: white;
+    text-align: center;
+
+
+    @media (min-width: $bp-medium) {
+
+        display: flex;
+        justify-content: space-between;
+        
+    }
+}
+
+.accroche p{
+
+    text-align: center;
+
+    @media (min-width: $bp-medium) {
+        text-align: left;
+        margin: 20px 20px;
+    
+        
+    }
+
+    @media (min-width: $bp-large) {
+
+        margin: 40px 20px;
+        text-align: left;
+    
+         
+     }
+
+}
+
+
+.btn-rejoindre {
+
+
+    margin-top: auto;
+    margin-bottom: -10px;
+
+    @media (min-width: $bp-medium) {
+
+        margin: auto;
+        
+    }
+
+}
+
+
+.logo {
+margin-top: 80px;
+    padding: 30px;
+
+    @media (min-width: $bp-medium) {
+        margin-top: 80px;
+        padding: 20px;
+    }
+
+    @media (min-width: $bp-large) {
+        margin-top: 70px;
+
+    }
+
+}
+
+// Barre de recherche
+
+
+.search-form {
+
+    display: none;
+
+    @media (min-width: $bp-medium) {
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+        margin-bottom: -15px;
+
+
+    }
+
+
+
+}
+
+.search-form input {
+    @media (min-width: $bp-medium) {
+        border: 0;
+        height: 50px;
+        box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.112);
+    }
+}
+
+.search-form input[type=text] {
+
+    @media (min-width: $bp-medium) {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 5px 20px;
+        width: 350px;
+        background-color: rgb(255, 255, 255);
+   }
+
+
+
+   @media (min-width: $bp-large) {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 5px 20px;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+}
+
+}
+
+
+
+.search-form input::placeholder {
+    @media (min-width: $bp-medium) {
+        color: rgb(154, 154, 154);
+    }
+}
+
+.search-form input[type=submit] {
+    @media (min-width: $bp-medium) {
+        font-size: 0;
+        width: 50px;
+        height: 50px;
+        background: $dark-gray url(../media/loupe-search-bar.png) center no-repeat;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.112);
+
+    }
+}

@@ -1,0 +1,478 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'caviar';
+  src: url("../fonts/caviardreams-webfont.woff2") format("woff2"), url("../fonts/caviardreams-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'caviar-bold';
+  src: url("../fonts/caviardreams_bold-webfont.woff2") format("woff2"), url("../fonts/caviardreams_bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'bunch';
+  src: url("../fonts/bunch_blossoms_personal_use-webfont.woff2") format("woff2"), url("../fonts/bunch_blossoms_personal_use-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  font-family: "caviar", sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+.wh,
+.bl,
+.gr {
+  font-family: 'caviar-bold';
+  -webkit-font-smoothing: antialiased; }
+
+h3 {
+  font-family: "bunch", "caviar", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 20px 0; }
+
+h2 {
+  font-family: 'caviar-bold';
+  text-align: center;
+  color: #5A5A5A;
+  margin-top: 50px;
+  padding-top: 50px;
+  border-top: 1px solid #5A5A5A;
+  width: 100%; }
+  @media (min-width: 768px) {
+    h2 {
+      display: flex;
+      margin-right: auto;
+      border-top: none;
+      border-bottom: 1px solid #5A5A5A;
+      width: 100%;
+      padding: 20px; } }
+
+.sidr {
+  font-family: 'caviar', serif; }
+
+.search-form input::placeholder {
+  font-family: "caviar", sans-serif; }
+
+h5 {
+  display: inline-block;
+  background-color: white;
+  padding: 4px 4px;
+  margin: 10px 10px; }
+
+body {
+  margin: 0; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+h2 {
+  letter-spacing: 0.05em; }
+
+.container {
+  max-width: 1100px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+main {
+  margin: 0;
+  padding: 0; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+h5 {
+  margin: 10px 1px; }
+
+.header-nav {
+  display: flex;
+  position: fixed;
+  z-index: 9;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  padding: 5px 10px; }
+  .header-nav .btn {
+    color: #5A5A5A; }
+    .header-nav .btn:hover, .header-nav .btn:focus {
+      background-color: #5A5A5A;
+      border-radius: 5px;
+      color: white;
+      padding: 5px 10px; }
+
+@media (min-width: 768px) {
+  .burger {
+    display: none; } }
+
+.nav-pages {
+  display: none;
+  padding-left: 40px; }
+  @media (min-width: 768px) {
+    .nav-pages {
+      display: flex;
+      align-items: center; }
+      .nav-pages a {
+        margin: 0 20px;
+        text-transform: uppercase; } }
+
+.connection {
+  background: url(../media/picto-user.png) no-repeat;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  font-size: 0; }
+
+.nav-reseaux {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  top: 30%;
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px; }
+  .nav-reseaux img {
+    width: 35px;
+    padding: 5px; }
+    @media (min-width: 768px) {
+      .nav-reseaux img {
+        width: 45px; } }
+    @media (min-width: 992px) {
+      .nav-reseaux img {
+        width: 50px; } }
+
+.sidr ul li {
+  border-bottom: 1px solid #dfdfdf;
+  line-height: 70px;
+  border: none; }
+
+.sidr {
+  font-size: 1em;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 0px 0px #ffffff; }
+
+.search-form {
+  display: none; }
+  @media (min-width: 768px) {
+    .search-form {
+      display: flex;
+      justify-content: center;
+      margin-top: auto;
+      margin-bottom: -15px; } }
+
+@media (min-width: 768px) {
+  .newslet input {
+    border: 0;
+    height: 50px;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.112); } }
+
+@media (min-width: 768px) {
+  .newslet input[type=text] {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 5px 20px;
+    width: 350px;
+    background-color: white; } }
+@media (min-width: 992px) {
+  .newslet input[type=text] {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 5px 20px;
+    width: 500px;
+    background-color: white; } }
+
+@media (min-width: 768px) {
+  .newslet input::placeholder {
+    color: #9a9a9a; } }
+
+@media (min-width: 768px) {
+  .newslet input[type=submit] {
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    background: #5A5A5A url(../media/loupe-search-bar.png) center no-repeat;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.112); } }
+
+.header-top {
+  background: url(../media/bg-header.jpg) center bottom;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.slogan {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 40px; }
+  @media (min-width: 768px) {
+    .slogan {
+      margin-top: 0;
+      font-size: 2rem;
+      letter-spacing: 2pt; } }
+  @media (min-width: 992px) {
+    .slogan {
+      margin-top: 0;
+      font-size: 2.2rem;
+      letter-spacing: 2pt; } }
+
+.accroche {
+  color: white;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .accroche {
+      display: flex;
+      justify-content: space-between; } }
+
+.accroche p {
+  text-align: center; }
+  @media (min-width: 768px) {
+    .accroche p {
+      text-align: left;
+      margin: 20px 20px; } }
+  @media (min-width: 992px) {
+    .accroche p {
+      margin: 40px 20px;
+      text-align: left; } }
+
+.btn-rejoindre {
+  margin-top: auto;
+  margin-bottom: -10px; }
+  @media (min-width: 768px) {
+    .btn-rejoindre {
+      margin: auto; } }
+
+.logo {
+  margin-top: 80px;
+  padding: 30px; }
+  @media (min-width: 768px) {
+    .logo {
+      margin-top: 80px;
+      padding: 20px; } }
+  @media (min-width: 992px) {
+    .logo {
+      margin-top: 70px; } }
+
+.search-form {
+  display: none; }
+  @media (min-width: 768px) {
+    .search-form {
+      display: flex;
+      justify-content: center;
+      margin-top: auto;
+      margin-bottom: -15px; } }
+
+@media (min-width: 768px) {
+  .search-form input {
+    border: 0;
+    height: 50px;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.112); } }
+
+@media (min-width: 768px) {
+  .search-form input[type=text] {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 5px 20px;
+    width: 350px;
+    background-color: white; } }
+@media (min-width: 992px) {
+  .search-form input[type=text] {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 5px 20px;
+    width: 500px;
+    background-color: white; } }
+
+@media (min-width: 768px) {
+  .search-form input::placeholder {
+    color: #9a9a9a; } }
+
+@media (min-width: 768px) {
+  .search-form input[type=submit] {
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    background: #5A5A5A url(../media/loupe-search-bar.png) center no-repeat;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.112); } }
+
+footer {
+  background-color: #464646;
+  color: #fff;
+  display: flex;
+  justify-content: space-between; }
+
+.encart-devis {
+  background-color: #c8bf00; }
+
+.carnets-voyage {
+  display: flex;
+  flex-direction: column; }
+
+.carnets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.carnet {
+  position: relative;
+  margin: 20px;
+  max-width: 420px;
+  flex-basis: 100%; }
+  .carnet:nth-of-type(n+3) {
+    display: none; }
+  @media (min-width: 768px) {
+    .carnet {
+      flex-basis: calc(50% - 40px); } }
+  @media (min-width: 992px) {
+    .carnet {
+      flex-basis: calc(33.33% - 40px); }
+      .carnet:nth-of-type(n) {
+        display: block; } }
+  .carnet > img {
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px #aeaeae; }
+
+.pres-carnet {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: #fff; }
+  .pres-carnet img {
+    margin-top: -60px;
+    margin-left: 6px; }
+  .pres-carnet p {
+    padding-left: 10px; }
+
+.destinations {
+  display: flex;
+  flex-direction: column; }
+
+.sejours {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px; }
+
+.sejour {
+  position: relative;
+  margin-top: 30px;
+  flex-basis: 100%; }
+  .sejour:nth-of-type(n+4) {
+    display: none; }
+  @media (min-width: 768px) {
+    .sejour {
+      flex-basis: calc(33.33% - 40px); } }
+  @media (min-width: 992px) {
+    .sejour {
+      flex-basis: calc(33.33% - 40px); }
+      .sejour:nth-of-type(n) {
+        display: block; } }
+  .sejour img {
+    width: 1100px;
+    border-radius: 5px; }
+
+.pres-presentation {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; }
+  @media (min-width: 768px) {
+    .pres-presentation {
+      padding: 1em; } }
+  .pres-presentation .bgc-p {
+    background-color: rgba(0, 0, 0, 0.605);
+    padding: 0.20rem; }
+  .pres-presentation p {
+    padding-left: 10px;
+    color: #fff;
+    margin: 0 auto 0 0; }
+
+.agence {
+  color: white;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #868686;
+  border-radius: 5px;
+  margin: 200px 10px;
+  align-items: center; }
+  @media (min-width: 768px) {
+    .agence {
+      margin: 200px auto; } }
+  .agence h3 {
+    font-size: 1.750rem;
+    text-align: center; }
+  .agence li {
+    font-size: 1.45rem;
+    margin: 40px; }
+    @media (min-width: 768px) {
+      .agence li {
+        margin-left: 150px; } }
+
+.agence-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column; }
+
+.agence img {
+  display: none; }
+  @media (min-width: 768px) {
+    .agence img {
+      display: flex;
+      position: absolute;
+      left: -40%;
+      bottom: -20%; } }
+
+.bg-communauté {
+  background-color: #c8bf00;
+  background-size: cover;
+  min-height: 100vh; }
+
+.frise {
+  margin-bottom: 0; }
+
+.btn-right {
+  margin-left: auto; }
+
+.wh,
+.bl,
+.gr {
+  text-transform: uppercase;
+  font-size: .75rem;
+  padding: 4px 4px;
+  border-radius: 3px;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.112); }
+
+.wh {
+  color: #ffffff;
+  background-color: #c8bf00;
+  cursor: pointer; }
+
+/*# sourceMappingURL=styles.css.map */

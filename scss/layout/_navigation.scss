@@ -1,0 +1,173 @@
+.header-nav {
+    display: flex;
+    position: fixed;
+    z-index: 9;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    padding: 5px 10px;
+
+    .btn {
+
+        color: $dark-gray;
+
+        &:hover,
+        &:focus {
+            background-color: $dark-gray;
+            border-radius: 5px;
+            color: white;
+            padding: 5px 10px;
+        }
+
+    }
+}
+
+.burger {
+
+    @media (min-width: $bp-medium) {
+        display: none;
+    }
+}
+
+
+
+
+.nav-pages {
+    display: none;
+    padding-left: 40px;
+
+    @media (min-width: $bp-medium) {
+        display: flex;
+        align-items: center;
+
+        a {
+            margin: 0 20px;
+            text-transform: uppercase;
+
+        }
+    }
+}
+
+
+.connection {
+
+    background: url(../media/picto-user.png) no-repeat;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    font-size: 0;
+
+}
+
+.nav-reseaux {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    top: 30%;
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    img {
+        width: 35px;
+        padding: 5px;
+
+        @media (min-width: $bp-medium) {
+            width: 45px;
+        }
+
+        @media (min-width: $bp-large) {
+            width: 50px;
+        }
+
+    }
+
+}
+
+// Personnalisation du menu 'sidr'
+
+.sidr ul li {
+
+    border-bottom: 1px solid #dfdfdf;
+    line-height: 70px;
+    border: none;
+}
+
+.sidr {
+
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 0px 0px #ffffff;
+
+}
+
+
+
+.search-form {
+
+    display: none;
+
+    @media (min-width: $bp-medium) {
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+        margin-bottom: -15px;
+
+
+    }
+
+
+
+}
+// Newsletter
+.newslet input {
+    @media (min-width: $bp-medium) {
+        border: 0;
+        height: 50px;
+        box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.112);
+    }
+}
+
+.newslet input[type=text] {
+
+    @media (min-width: $bp-medium) {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 5px 20px;
+        width: 350px;
+        background-color: rgb(255, 255, 255);
+   }
+
+
+
+   @media (min-width: $bp-large) {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 5px 20px;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+}
+
+}
+
+
+
+.newslet input::placeholder {
+    @media (min-width: $bp-medium) {
+        color: rgb(154, 154, 154);
+    }
+}
+
+.newslet input[type=submit] {
+    @media (min-width: $bp-medium) {
+        font-size: 0;
+        width: 50px;
+        height: 50px;
+        background: $dark-gray url(../media/loupe-search-bar.png) center no-repeat;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.112);
+
+    }
+}
