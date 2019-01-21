@@ -1,0 +1,19 @@
+
+.apprecier {
+  background-color: #C8BF00;
+  padding: 10px 0;
+
+}
+.pts-forts ul {
+  list-style: disc;
+  padding-left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pts-forts li {
+  display: block;
+  flex-basis: 50%;
+  color: #464646 ;
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
