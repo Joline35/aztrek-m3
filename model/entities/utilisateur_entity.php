@@ -18,4 +18,26 @@ function getUtilisateurByEmailMotDePasse(string $email, string $password){
 
     return $stmt->fetch();
 
-};
+}
+
+function insertUtilisateur(string $nom, string $prenom, string $email, string $mot_de_passe){
+    global $connection;
+
+    $query = "
+    INSERT INTO utilisateur(nom, prenom, portrait, email, mot_de_passe, admin) 
+    VALUES (:nom, :prenom, :portrait, :email, SHA1(:mot_de_passe), 0)
+    ";
+
+    $stmt = $connection->prepare($query);
+    $stmt->bindParam(":email" , $email );
+    $stmt->bindParam(":mot_de_passe" , $mot_de_passe );
+    $stmt->bindParam(":nom" , $nom );
+    $stmt->bindParam(":prenom" , $prenom );
+    $stmt->bindParam(":portrait" , $portrait );
+
+    try {
+        return $stmt->execute();
+    } catch (PDOException $exception) {
+        return false;
+    }
+}

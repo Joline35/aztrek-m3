@@ -14,6 +14,6 @@ $filename = $_FILES["image"]["name"];
 $tmp = $_FILES["image"]["tmp_name"];
 move_uploaded_file($tmp, "../../../uploads/" . $filename);
 
-insertRecette($titre, $categorie_id, $filename, $description, $description_courte, $couverts, $temps_prepa, $temps_cuisson, $publie, $user["id"]);
+insertCircuit($titre, $pays_id, $filename, $description, $description_courte, $duree, $date_creation, $user["id"]);
 
 header('Location: index.php');

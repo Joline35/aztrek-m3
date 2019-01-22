@@ -3,7 +3,7 @@ require_once '../../../model/database.php';
 
 $id = $_GET['id'];
 $photo = getEntity("circuit", $id);
-$liste_categories = getAllEntities("pays");
+$liste_pays = getAllEntities("pays");
 $liste_tags = getAllEntities("tag");
 
 $photo_liste_tags = getAllTagsByPhoto($id);

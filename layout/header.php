@@ -8,11 +8,12 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico/favicon.ico"/>
 
-
+    <link href=“//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css” rel=“stylesheet”>
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.css">
     <link rel="stylesheet" href="./css/jquery.sidr.light.min.css">
     <link rel="stylesheet" href="css/styles.css">
+
 
     <?php foreach ($stylesheets as $stylesheet) : ?>
         <link rel="stylesheet" href="<?= $stylesheet; ?>">

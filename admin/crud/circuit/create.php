@@ -6,7 +6,7 @@ $circuits = getAllEntities("circuit");
 require_once '../../layout/header.php';
 ?>
 
-<h1>Ajout d'une photo</h1>
+<h1>Ajout d'un circuit</h1>
 
 <form action="create_query.php" method="POST" enctype="multipart/form-data">
     <div class="form-group">

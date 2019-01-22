@@ -27,9 +27,10 @@ $user = getCurrentUser();
 
         <?php if (isset($user)) : ?>
             <li><a class='btn'href="#"><i class="fa fa-user"></i> <?= $user["email"]; ?></a></li>
-            <li><a class='btn' href="<?= SITE_ADMIN . "logout.php"; ?>"><i class="fa fa-sign-out"></i> Déconnexion</a></li>
+            <li><a class='btn' href="<?= SITE_ADMIN . "logout.php"; ?>"><i class="fa fa-sign-out"></i>Déconnexion</a></li>
         <?php else: ?>
             <li><a href="<?= SITE_ADMIN; ?>"><img src="media/picto-user.png" alt=""></a></li>
+            <li><a href="<?= SITE_URL . "create_account.php"; ?>"><i class="fa fa-user"></i>Créer un compte</a></li>
         <?php endif; ?>
     </ul>
 
