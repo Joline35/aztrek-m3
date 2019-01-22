@@ -51,12 +51,13 @@
 
 
 .connection {
-
-    background: url(../media/picto-user.png) no-repeat;
-    width: 40px;
     height: 40px;
     display: flex;
-    font-size: 0;
+.btn{
+    padding: 8px;
+    justify-content: center;
+
+}
 
 }
 

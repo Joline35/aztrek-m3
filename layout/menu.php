@@ -1,3 +1,12 @@
+<?php
+
+require_once __DIR__ . "/../config/parameters.php";
+require_once __DIR__ . "/../functions.php";
+
+$user = getCurrentUser();
+
+?>
+
 <nav class="header-nav">
 
 
@@ -15,8 +24,13 @@
 
 
     <ul class="connection">
-        <li><a href="#">Créer mon compte</a></li>
-        <li><a href="#">Me connecter</a></li>
+
+        <?php if (isset($user)) : ?>
+            <li><a class='btn'href="#"><i class="fa fa-user"></i> <?= $user["email"]; ?></a></li>
+            <li><a class='btn' href="<?= SITE_ADMIN . "logout.php"; ?>"><i class="fa fa-sign-out"></i> Déconnexion</a></li>
+        <?php else: ?>
+            <li><a href="<?= SITE_ADMIN; ?>"><img src="media/picto-user.png" alt=""></a></li>
+        <?php endif; ?>
     </ul>
 
 
