@@ -2,7 +2,7 @@
 require_once '../../../model/database.php';
 
 $id = $_GET['id'];
-$categorie = getOneEntity("categorie", $id);
+$categorie = getOneEntity("pays", $id);
 
 require_once '../../layout/header.php';
 ?>

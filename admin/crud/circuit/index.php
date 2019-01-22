@@ -1,7 +1,7 @@
 <?php
 require_once '../../../model/database.php';
 
-$recipes = getAllRecette();
+$circuit = getAllCircuit();
 
 $error_msg = null;
 if (isset($_GET['errcode'])) {
@@ -19,7 +19,7 @@ if (isset($_GET['errcode'])) {
 require_once '../../layout/header.php';
 ?>
 
-<h1>Gestion des recettes</h1>
+<h1>Gestion des circuits</h1>
 
 <a href="create.php" class="btn btn-primary">
     <i class="fa fa-plus"></i>
@@ -40,9 +40,8 @@ require_once '../../layout/header.php';
         <tr>
             <th>Titre</th>
             <th>Image</th>
-            <th>Catégorie</th>
-            <th>Auteur</th>
-            <th>Date de création</th>
+            <th>Pays</th>
+            <th>Année de création</th>
             <th class="actions">Actions</th>
         </tr>
     </thead>
@@ -53,7 +52,7 @@ require_once '../../layout/header.php';
                 <td>
                     <img src="../../../uploads/<?php echo $recipe['image']; ?>" class="img-thumbnail">
                 </td>
-                <td><?php echo $recipe['categorie']; ?></td>
+                <td><?php echo $recipe['pays']; ?></td>
                 <td><?php echo $recipe['pseudo']; ?></td>
                 <td><?php echo $recipe['date_creation_format']; ?></td>
                 <td class="actions">

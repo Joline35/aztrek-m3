@@ -68,7 +68,9 @@ getHeader("Accueil", "Aztrek, site de voyage pour les passionnés de Treks");
     <div class="sejours">
         <?php foreach ($circuits as $circuit) : ?>
             <div class="sejour">
+                <a href="circuit.php?id=<?= $circuit ["id"]; ?>">
                 <img src="uploads/<?= $circuit ["image"]; ?>">
+
                 <div class="pres-presentation">
                     <h5><?= $circuit ["pays"]; ?></h5>
                     <div class="bgc-p">
@@ -76,6 +78,7 @@ getHeader("Accueil", "Aztrek, site de voyage pour les passionnés de Treks");
                         <p><?= $circuit ["description_courte"]; ?></p>
                     </div>
                 </div>
+                </a>
             </div>
         <?php endforeach; ?>
     </div>

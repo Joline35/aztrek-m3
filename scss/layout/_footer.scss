@@ -1,12 +1,22 @@
-footer{
+footer {
 
 background-color: $gray-footer;
 color: #fff;
-display: flex;
-justify-content: space-between;
+
+  .container {
+    display: flex;
+
+
+  }
 }
 
 .encart-devis{
 
 background-color: $green;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: center;
+  font-size: larger;
+  margin-bottom: auto;
 }
+

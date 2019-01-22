@@ -311,12 +311,17 @@ h5 {
 
 footer {
   background-color: #464646;
-  color: #fff;
-  display: flex;
-  justify-content: space-between; }
+  color: #fff; }
+  footer .container {
+    display: flex; }
 
 .encart-devis {
-  background-color: #c8bf00; }
+  background-color: #c8bf00;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: center;
+  font-size: larger;
+  margin-bottom: auto; }
 
 .carnets-voyage {
   display: flex;
@@ -371,7 +376,7 @@ footer {
 .sejours {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 20px; }
 
 .sejour {
@@ -457,23 +462,6 @@ footer {
 
 .frise {
   margin-bottom: 0; }
-
-.apprecier {
-  background-color: #C8BF00;
-  padding: 10px 0; }
-
-.pts-forts ul {
-  list-style: disc;
-  padding-left: 1rem;
-  display: flex;
-  flex-wrap: wrap; }
-
-.pts-forts li {
-  display: block;
-  flex-basis: 50%;
-  color: #464646;
-  font-size: 1.05rem;
-  margin-bottom: 10px; }
 
 .btn-right {
   margin-left: auto; }

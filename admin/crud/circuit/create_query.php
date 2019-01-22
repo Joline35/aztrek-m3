@@ -3,13 +3,11 @@ require_once '../../security.php';
 require_once '../../../model/database.php';
 
 $titre = $_POST['titre'];
-$categorie_id = $_POST['categorie_id'];
+$pays_id = $_POST['pays_id'];
 $description = $_POST['description'];
 $description_courte = $_POST['description_courte'];
-$couverts = $_POST['couverts'];
-$temps_prepa = $_POST['temps_prepa'];
-$temps_cuisson = $_POST['temps_cuisson'];
-$publie = $_POST['publie'] ? 1 : 0;
+$duree = $_POST['duree'];
+$date_creation = $_POST['date_creation'];
 
 // Upload de l'image
 $filename = $_FILES["image"]["name"];

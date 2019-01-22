@@ -1,7 +1,7 @@
 <?php
 require_once '../../../model/database.php';
 
-$categories = getAllEntities("categorie");
+$categories = getAllEntities("pays");
 
 $error_msg = null;
 if (isset($_GET['errcode'])) {

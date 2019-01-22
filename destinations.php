@@ -11,16 +11,21 @@ getMenu()
 <section class="destinations container">
     <h2>Nos Destinations</h2>
 
-    <?php foreach ($liste_pays as $pays) : ?>
-        <div class="sejours">
+
+    <div class="sejours">
+        <?php foreach ($liste_pays as $pays) : ?>
             <div class="sejour">
-                <img src="uploads/<?= $pays ["image"]; ?>" alt="">
-                <div class="pres-presentation">
-                    <h5><?= $pays ["libelle"]; ?></h5>
-                </div>
+                <a href="pays.php?id=<?= $pays ["id"]; ?>">
+                    <img src="uploads/<?= $pays ["image"]; ?>" alt="">
+
+                    <div class="pres-presentation">
+                        <h5><?= $pays ["libelle"]; ?></h5>
+                    </div>
+                </a>
             </div>
-        </div>
-    <?php endforeach; ?>
+
+        <?php endforeach; ?>
+    </div>
 </section>
 
 <?php getFooter() ?>

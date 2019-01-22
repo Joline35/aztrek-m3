@@ -9,13 +9,13 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link <?php echo isActive("/crud/recette/") ? 'active' : ''; ?>" href="<?php echo SITE_ADMIN; ?>crud/recette/">
+                <a class="nav-link <?php echo isActive("/crud/circuit/") ? 'active' : ''; ?>" href="<?php echo SITE_ADMIN; ?>crud/recette/">
                     <i class="fa fa-cutlery"></i>
                     Recette
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link <?php echo isActive("/crud/categorie/") ? 'active' : ''; ?>" href="<?php echo SITE_ADMIN; ?>crud/categorie/">
+                <a class="nav-link <?php echo isActive("/crud/pays/") ? 'active' : ''; ?>" href="<?php echo SITE_ADMIN; ?>crud/categorie/">
                     <i class="fa fa-book"></i>
                     Catégories
                 </a>

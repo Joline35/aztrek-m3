@@ -1,7 +1,7 @@
 <?php
 require_once '../../../model/database.php';
 
-$categories = getAllEntities("categorie");
+$circuits = getAllEntities("circuit");
 
 require_once '../../layout/header.php';
 ?>
@@ -16,9 +16,9 @@ require_once '../../layout/header.php';
     <div class="form-group">
         <label>Catégorie</label>
         <select name="categorie_id" class="form-control">
-            <?php foreach ($categories as $categorie) : ?>
-                <option value="<?php echo $categorie["id"]; ?>">
-                    <?php echo $categorie["libelle"]; ?>
+            <?php foreach ($circuits as $circuit) : ?>
+                <option value="<?php echo $circuit["id"]; ?>">
+                    <?php echo $circuit["titre"]; ?>
                 </option>
             <?php endforeach; ?>
         </select>

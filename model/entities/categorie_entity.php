@@ -5,7 +5,7 @@ function insertCategorie(string $libelle){
 global $connection;
 
 $query = "INSERT INTO
-  categorie (libelle) VALUES (:libelle)";
+  pays (libelle) VALUES (:libelle)";
 
 
     $stmt = $connection->prepare($query);
@@ -18,7 +18,7 @@ function updateCategorie(int $id, string $libelle) {
 
     global $connection;
 
-    $query = "UPDATE categorie SET libelle = :libelle WHERE id = :id";
+    $query = "UPDATE pays SET libelle = :libelle WHERE id = :id";
 
 
     $stmt = $connection->prepare($query);

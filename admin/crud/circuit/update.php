@@ -2,8 +2,8 @@
 require_once '../../../model/database.php';
 
 $id = $_GET['id'];
-$photo = getEntity("recette", $id);
-$liste_categories = getAllEntities("categorie");
+$photo = getEntity("circuit", $id);
+$liste_categories = getAllEntities("pays");
 $liste_tags = getAllEntities("tag");
 
 $photo_liste_tags = getAllTagsByPhoto($id);
