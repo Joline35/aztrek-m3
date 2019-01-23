@@ -95,6 +95,21 @@ ul {
 h5 {
   margin: 10px 1px; }
 
+.tableau-departs {
+  vertical-align: middle;
+  border-color: inherit;
+  padding: 20px; }
+  .tableau-departs th {
+    padding: 2px 8px;
+    font-size: 1.2rem;
+    color: #c8bf00;
+    background-color: transparent;
+    line-height: 1.4; }
+  .tableau-departs td {
+    padding: 2px 8px;
+    color: #5A5A5A;
+    line-height: 1.4; }
+
 .header-nav {
   display: flex;
   position: fixed;

@@ -33,11 +33,11 @@ getMenu()
 
 <?php if ($departs) : ?>
 
-    <table>
+    <table class="tableau-departs">
         <tr>
-        <td><strong>Départs</strong></td>
-        <td><strong>Prix</strong></td>
-        <td><strong>Places totales</strong></td>
+        <th><strong>Départs</strong></th>
+        <th><strong>Prix</strong></th>
+        <th><strong>Places totales</strong></th>
         </tr>
 <?php foreach ($departs as $depart) : ?>
       <tr>
