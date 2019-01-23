@@ -69,6 +69,8 @@ function getAllDepartByCircuit(int $id): array{
     SELECT
         depart.*,
         circuit.*,
+           DATE_FORMAT(date_depart, '%d %M %Y') AS date_depart,
+           ROUND(prix) AS prix,
         depart.id AS depart
     FROM depart
     INNER JOIN circuit ON depart.circuit_id = circuit.id

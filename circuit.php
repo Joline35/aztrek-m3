@@ -42,8 +42,8 @@ getMenu()
 <?php foreach ($departs as $depart) : ?>
       <tr>
         <td><?= $depart['date_depart'] ?></td>
-        <td><?= $depart['prix'] ?></td>
-        <td><?= $depart['place_total'] ?></td>
+        <td><?= $depart['prix'] ?> €</td>
+        <td><?= $depart['place_total']?> places disponibles</td>
       </tr>
 
 <?php endforeach; ?>
