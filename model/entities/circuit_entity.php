@@ -60,3 +60,24 @@ function insertCircuit ($titre, $image, $description, $description_courte, $dure
     $stmt->bindParam(":difficulte_id", $difficulte_id);
     $stmt->execute();
 }
+
+function getAllDepartByCircuit(int $id): array{
+
+    global $connection;
+
+    $query = "
+    SELECT
+        depart.*,
+        circuit.*,
+        depart.id AS depart
+    FROM depart
+    INNER JOIN circuit ON depart.circuit_id = circuit.id
+    WHERE depart.circuit_id = :id 
+    GROUP BY depart.id
+    ";
+    $stmt = $connection->prepare($query);
+    $stmt->bindParam(":id", $id);
+    $stmt->execute();
+
+    return $stmt->fetchAll();
+}

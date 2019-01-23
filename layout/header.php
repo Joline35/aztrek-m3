@@ -50,7 +50,7 @@
 
     <div class="accroche container">
         <p>Créez, organisez et partagez vos meilleurs souvenirs avec notre communauté de voyageurs passionnés</p>
-        <a class="btn-rejoindre wh">Nous rejoindre</a>
+        <a class="btn-rejoindre wh" href="create_account.php">Nous rejoindre</a>
     </div>
 
 
