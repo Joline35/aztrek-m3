@@ -1,8 +1,8 @@
 <?php
 require_once '../../../model/database.php';
 
-$circuits = getAllEntities("circuit");
-
+$liste_pays = getAllEntities("pays");
+$liste_difficulte = getAllEntities("difficulte");
 require_once '../../layout/header.php';
 ?>
 
@@ -14,11 +14,11 @@ require_once '../../layout/header.php';
         <input type="text" name="titre" class="form-control" placeholder="Titre" required>
     </div>
     <div class="form-group">
-        <label>Catégorie</label>
-        <select name="categorie_id" class="form-control">
-            <?php foreach ($circuits as $circuit) : ?>
-                <option value="<?php echo $circuit["id"]; ?>">
-                    <?php echo $circuit["titre"]; ?>
+        <label>Pays</label>
+        <select name="pays_id" class="form-control">
+            <?php foreach ($liste_pays as $pays) : ?>
+                <option value="<?php echo $pays["id"]; ?>">
+                    <?php echo $pays["libelle"]; ?>
                 </option>
             <?php endforeach; ?>
         </select>
@@ -35,21 +35,23 @@ require_once '../../layout/header.php';
         <label>Description courte</label>
         <input type="text" name="description_courte" class="form-control" placeholder="Description courte" required>
     </div>
+<!--     <div class="form-group">-->
+<!--        <label>Date de création</label>-->
+<!--        <input type="date" name="date_creation" class="form-control" required>-->
+<!--    </div>-->
     <div class="form-group">
-        <label>Nombre de couverts</label>
-        <input type="number" name="couverts" class="form-control" required>
+        <label>Durée du circuit</label>
+        <input type="number" name="duree" class="form-control" required>
     </div>
     <div class="form-group">
-        <label>Temps de preparation</label>
-        <input type="time" name="temps_prepa" class="form-control" required>
-    </div>
-    <div class="form-group">
-        <label>Temps de cuisson</label>
-        <input type="time" name="temps_cuisson" class="form-control" required>
-    </div>
-    <div class="form-group form-check">
-        <input type="checkbox" name="publie" class="form-check-input" required>
-        <label>Publié ?</label>
+        <label>Difficulté du circuit</label>
+        <select name="difficulte_id" class="form-control">
+            <?php foreach ($liste_difficulte as $difficulte) : ?>
+                <option value="<?php echo $difficulte["id"]; ?>">
+                    <?php echo $difficulte["libelle"]; ?>
+                </option>
+            <?php endforeach; ?>
+        </select>
     </div>
     <button type="submit" class="btn btn-success">
         <i class="fa fa-check"></i>
@@ -57,4 +59,4 @@ require_once '../../layout/header.php';
     </button>
 </form>
 
-<?php require_once '../../layout/footer.php'; ?>p'; ?>
+<?php require_once '../../layout/footer.php'; ?>

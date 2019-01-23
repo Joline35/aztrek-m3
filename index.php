@@ -2,7 +2,7 @@
 require_once "model/database.php";
 require_once "functions.php";
 
-$circuits = getAllCircuit();
+$circuits = getAllCircuit(6);
 
 getHeader("Accueil", "Aztrek, site de voyage pour les passionnés de Treks");
 ?>

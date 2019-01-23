@@ -1,15 +1,14 @@
 <?php
-
 require_once '../../security.php';
 require_once '../../../model/database.php';
 
-$id = $_POST['id'];
-$photo = getPhoto($id);
-
 $titre = $_POST['titre'];
 $description = $_POST['description'];
-$categorie_id = $_POST['categorie_id'];
-$tag_ids = isset($_POST['tag_ids']) ? $_POST['tag_ids'] : [];
+$description_courte = $_POST['description_courte'];
+$duree = $_POST['duree'];
+$date_creation = $_POST['date_creation'];
+$pays_id = $_POST['pays_id'];
+$difficulte_id = $_POST['difficulte_id'];
 
 // Upload de l'image
 if ($_FILES["image"]["error"] == 0) {
@@ -18,9 +17,9 @@ if ($_FILES["image"]["error"] == 0) {
     move_uploaded_file($tmp, "../../../uploads/" . $filename);
 } else {
     // Aucun fichier uploadé
-    $filename = $photo["image"];
+    $filename = $circuit["image"];
 }
 
-updatePhoto($id, $titre, $filename, $description, $categorie_id, $tag_ids);
+updateCircuit ($titre, $filename, $description, $description_courte, $duree, $date_creation, $pays_id, $difficulte_id);
 
 header('Location: index.php');

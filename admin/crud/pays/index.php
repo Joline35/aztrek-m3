@@ -39,13 +39,16 @@ require_once '../../layout/header.php';
     <thead class="thead-light">
         <tr>
             <th>Libellé</th>
+            <th>Image</th>
             <th class="actions">Actions</th>
+
         </tr>
     </thead>
     <tbody>
         <?php foreach ($liste_pays as $pays) : ?>
             <tr>
                 <td><?php echo $pays['libelle']; ?></td>
+                <td><img src="../../../uploads/<?php echo $pays['image']; ?>" class="img-thumbnail"></td>
                 <td class="actions">
                     <a href="update.php?id=<?php echo $pays['id']; ?>" class="btn btn-warning">
                         <i class="fa fa-edit"></i>
