@@ -11,13 +11,13 @@
     .btn {
 
         color: $dark-gray;
+        padding: 5px 10px;
 
         &:hover,
         &:focus {
             background-color: $dark-gray;
             border-radius: 5px;
             color: white;
-            padding: 5px 10px;
         }
 
     }
@@ -31,7 +31,12 @@
 }
 
 
+.fa-user-plus{
 
+    color: #464646;
+    margin: 5px;
+    font-size: xx-large;
+}
 
 .nav-pages {
     display: none;
@@ -53,6 +58,7 @@
 .connection {
     height: 40px;
     display: flex;
+    align-items: center;
 .btn{
     padding: 8px;
     justify-content: center;

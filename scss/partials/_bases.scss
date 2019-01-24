@@ -8,6 +8,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #464646;
 }
 
 h2{
@@ -52,7 +53,7 @@ h5{
     border-color: inherit;
     padding: 20px;
 
-    th{
+    .td-titre{
        padding: 2px 8px;
         font-size: 1.2rem;
         color: #c8bf00;
@@ -70,3 +71,32 @@ h5{
     }
 }
 
+.depart{
+
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.difficulte{
+
+    text-align: center;
+}
+    .fa-send-o:before, .fa-paper-plane-o:before{
+
+        color: #c8bf00;
+
+    }
+
+    .fa-send-o:before, .fa-paper-plane:before{
+
+        color: #c8bf00;
+
+    }
+
+.duree{
+
+    color: #c8bf00;
+}

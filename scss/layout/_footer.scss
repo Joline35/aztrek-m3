@@ -4,19 +4,45 @@ background-color: $gray-footer;
 color: #fff;
 
   .container {
+
     display: flex;
+    align-items: center;
+justify-content: space-around;
 
 
   }
 }
 
-.encart-devis{
 
-background-color: $green;
+.log-footer{
+
+  padding: 5px;
+}
+footer .container .encart-devis {
+  background-color: $green;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   text-align: center;
-  font-size: larger;
+  color: white;
+  padding: 3px;
+  margin: 0px;
+}
+
+.coordonnees{
+
+  margin-top: 30px;
+}
+
+
+
+.legal{
+
+  margin-top: 30px;
+
+}
+.right{
+
   margin-bottom: auto;
 }
+
 

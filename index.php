@@ -65,9 +65,9 @@ getHeader("Accueil", "Aztrek, site de voyage pour les passionnés de Treks");
 <section class="destinations container">
     <h2>Destinations à découvrir</h2>
 
-    <div class="sejours">
+    <div class="sejours sejours-accueil">
         <?php foreach ($circuits as $circuit) : ?>
-            <div class="sejour">
+            <div class="sejour sejour-accueil">
                 <a href="circuit.php?id=<?= $circuit ["id"]; ?>">
                 <img src="uploads/<?= $circuit ["image"]; ?>">
 
@@ -80,6 +80,7 @@ getHeader("Accueil", "Aztrek, site de voyage pour les passionnés de Treks");
                 </div>
                 </a>
             </div>
+
         <?php endforeach; ?>
     </div>
     <a class="btn-circuit btn-right wh" href="destinations.php">Tous nos circuits</a>

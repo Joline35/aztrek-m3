@@ -16,9 +16,9 @@ $user = getCurrentUser();
         <ul class="nav-pages">
             <li><a class='btn' href="index.php">Accueil</a></li>
             <li><a class='btn' href="destinations.php">Destinations</a></li>
-            <li><a class='btn' href="photos.php">Photos</a></li>
-            <li><a class='btn' href="#">L'agence</a></li>
-            <li><a class='btn' href="#">Contact</a></li>
+            <li><a class='btn' href="index.php">Photos</a></li>
+            <li><a class='btn' href="index.php">L'agence</a></li>
+            <li><a class='btn' href="index.php">Contact</a></li>
         </ul>
     </div>
 
@@ -30,7 +30,7 @@ $user = getCurrentUser();
             <li><a class='btn' href="<?= SITE_ADMIN . "logout.php"; ?>"><i class="fa fa-sign-out"></i>Déconnexion</a></li>
         <?php else: ?>
             <li><a href="<?= SITE_ADMIN; ?>"><img src="media/picto-user.png" alt=""></a></li>
-            <li><a href="<?= SITE_URL . "create_account.php"; ?>"><i class="fa fa-user"></i>Créer un compte</a></li>
+            <li><a href="<?= SITE_URL . "create_account.php"; ?>"><i class="fa fa-user-plus"></i></a></li>
         <?php endif; ?>
     </ul>
 

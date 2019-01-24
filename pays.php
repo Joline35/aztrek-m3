@@ -13,20 +13,22 @@ getMenu()
 <section class="pays container">
     <h2><?= $pays ["libelle"];?></h2>
 
-
+    <div class="sejours">
 
         <?php foreach ($circuit_par_pays as $circuit) : ?>
-            <div class="pays">
+            <div class="sejour">
                 <a href="circuit.php?id=<?= $circuit ["id"]; ?>">
                 <img src="uploads/<?= $circuit ["image"]; ?>" alt="">
-                <div class="presentation">
+                <div class="pres-presentation">
                     <h5><?= $circuit ["titre"]; ?></h5>
-                    <p><?= $circuit ["description_courte"] ;?></p>
+                    <p class="bgc-p"><?= $circuit ["description_courte"] ;?></p>
                 </div>
                 </a>
             </div>
 
         <?php endforeach; ?>
+
+    </div>
     <a class="btn-circuit btn-right wh" href="destinations.php">Retour</a>
 
 </section>

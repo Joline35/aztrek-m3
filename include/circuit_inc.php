@@ -1,11 +1,10 @@
 <article>
     <a href="circuit.php?id=<?= $circuit ["id"]; ?>">
-        <img src="uploads/<?= $circuit ["image"]; ?>" alt="<?= $circuit ["titre"]; ?>"
+        <img src="uploads/<?= $circuit["image"]; ?>" alt="<?= $circuit ["titre"]; ?>"
              class="img-responsive">
     </a>
-    <h2><a href="circuit.php?id=<?= $circuit ["id"]; ?>"> <?= $circuit ["titre"]; ?></a></h2>
-    <p> <?= $circuit ["description_courte"]; ?></p>
-
+    <h2><a href="circuit.php?id=<?= $circuit ["id"]; ?>"> <?= $circuit["titre"]; ?></a></h2>
+    <p> <?= $recipe ["description_courte"]; ?></p>
     <p>
 
         <?php  $difficulte = 2; ?>
@@ -20,4 +19,9 @@
 
     </p>
 
+
+
+    <footer>
+        <div class="label"><i class="fa fa-calendar"></i><?= $circuit["date_creation_format"]; ?></div>
+    </footer>
 </article>

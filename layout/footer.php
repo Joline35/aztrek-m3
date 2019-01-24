@@ -14,23 +14,22 @@
 
             <img src="./media/logo-aztrek.png" alt="">
         </div>
-        <div class="right">
-            <div class="encart-devis">
 
-                <p>Demandez votre devis gratuit</p>
-            </div>
+        <div class="right">
+
+            <a class="encart-devis" href="<?= SITE_URL . "create_account.php"; ?>"><strong>Demandez votre devis gratuit</strong></a>
+
+
 
             <div class="coordonnees">
 
-                <p>02 99 37 28 12</p>
-                <p>contact@aztrek-voyages.com</p>
+
+                <p><strong>02 99 37 28 12</strong><br>contact@aztrek-voyages.com</p>
 
             </div>
             <div class="legal">
 
-                <p>Céline LE CLAIR | @2018</p>
-                <P>Mentions Légales</P>
-                <p>Politique de confidentialité - Réglement RGPD</p>
+                <p>Céline LE CLAIR | @2018<br>Mentions Légales <br>Politique de confidentialité - Réglement RGPD</p>
 
             </div>
         </div>
